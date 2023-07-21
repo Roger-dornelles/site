@@ -70,8 +70,8 @@ const ModalContact = ({ openModal }: ContactType) => {
         className={`
           ${
             isOpenModal
-              ? 'flex z-[99] duration-[2s] top-0 opacity-[1] ease h-auto '
-              : ' duration-[2s] top-[-400px] ease-in-out opacity-0 flex'
+              ? 'flex z-[99] duration-[2s] top-0 opacity-[1] ease h-auto flex-wrap'
+              : ' duration-[2s] top-[-1000px] ease-in-out opacity-0 flex flex-wrap'
           }
           absolute w-full bg-[#2d343e]  justify-between m-auto z-[99] p-8
           `}
@@ -82,7 +82,7 @@ const ModalContact = ({ openModal }: ContactType) => {
         >
           <BsXCircle />
         </b>
-        <div className={`flex flex-col text-[3.75rem]`}>
+        <div className={`flex flex-col text-[3.75rem]  max-md:text-[1.7rem]  max-sm:mb-[1rem] flex-wrap md:text-[2rem]`}>
           <p>COMO PODEMOS</p>
           <span className={`text-[#bc9c57]`}>AJUDAR?</span>
         </div>
@@ -122,7 +122,10 @@ const ModalContact = ({ openModal }: ContactType) => {
           </div>
         </div>
 
-        <form className={`flex flex-col w-[520px] mt-[12px]  min-h-[300px]`} onSubmit={handleFormInformation}>
+        <form
+          className={`flex flex-col w-[520px] mt-[12px]  min-h-[300px] max-sm:mt-[3rem] max-sm:m-auto`}
+          onSubmit={handleFormInformation}
+        >
           <Input
             label={'Email'}
             value={email}
