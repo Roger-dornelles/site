@@ -1,4 +1,4 @@
-# Site
+# :computer: Site
 
 ## hospedado na vercel
 LINK:
@@ -7,7 +7,7 @@ https://site-delta-brown.vercel.app/
 
 ----------------------
 
-## INSTALAÇÃO
+## :hammer_and_pick: INSTALAÇÃO
 
 No terminal/prompt de comando fazer o clone do projeto
 
@@ -40,6 +40,16 @@ vai rodar o projeto localmente no seu computador
 
 O projeto vai rodar em  [http://localhost:3000](http://localhost:3000) 
 
+## :clipboard: Testes
+
+No terminal digitar
+```bash
+npx cypress open 
+```
+vai abrir uma aba do cypress selecionar E2E após ELECTRON => START E2E TESTING 
 
 
+Vai abrir outra aba com os teste só selecionar o teste que queira executar
+
+PROTO pode acompanhar os teses sendo executados 
 
