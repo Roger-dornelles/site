@@ -53,6 +53,7 @@ const Empreendimentos = () => {
       transition={{ ease: 'easeOut', duration: 2.5 }}
       exit={{ opacity: 0 }}
       className={`bg-[#323538] w-[100%] min-h-[100%] flex justify-center items-center flex-col  m-auto pt-[10rem] flex-wrap `}
+      data-cy="section"
     >
       <div ref={ref1} />
       <div className={`w-[80%] max-2xl:w-[95%] `}>
@@ -145,6 +146,7 @@ const Empreendimentos = () => {
             ? ' duration-[1.5s] opacity-[1] ease-in-out flex flex-row justify-between m-auto'
             : ' opacity-0 duration-[1.5s] ease none'
         } w-[100%] h-[500px] mt-[3rem] relative m-auto `}
+        data-cy="ebook"
       >
         <Image src={book} alt={'imagem de livros'} width={0} height={0} className={`w-full h-full `} />
         <div

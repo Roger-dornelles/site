@@ -31,11 +31,12 @@ export default function Home() {
         </p>
         <p className={`text-sm z-[99]`}>Apartamentos com 120 a 150m² no Perequê, Porto Belo</p>
 
-        <button className={`p-[0.2rem] w-[150px] border-[2px] rounded-[1rem] mt-[1.5rem] uppercase `}>Explore</button>
+        <button data-cy="button" className={`p-[0.2rem] w-[150px] border-[2px] rounded-[1rem] mt-[1.5rem] uppercase `}>Explore</button>
       </div>
 
       <footer
         className={`flex justify-between items-center w-full absolute bottom-[1rem] z-[10] max-lg:bottom-0 max-lg:pb-2 max-lg:flex-col`}
+        data-cy="footer"
       >
         <div
           className={`w-[10%] flex justify-start items-center text-left ml-[2rem] max-lg:w-[30%] max-lg:text-center max-lg:ml-[4rem]`}
