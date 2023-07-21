@@ -5,23 +5,34 @@
 No terminal/prompt de comando fazer o clone do projeto
 
 ```bash
-
+git clone https://github.com/Roger-dornelles/site
 ```
 
-First, run the development server:
+Após ter feito o clone do projeto entra na pasta do projeto no terminal digitar 
+
+
+```bash
+cd nome da pasta
+```
+* nome da pasta refere-se ao local onde esta a pasta do projeto e o nome a pasta
+
+Dentro da pasta do projeto no terminal digitar 
+
+```bash
+npm install
+```
+
+instalar as dependencias do projeto
+
+Após ter feito a instalação das dependencias no terminal digitar
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
 ```
+vai rodar o projeto localmente no seu computador
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+O projeto vai rodar em  [http://localhost:3000](http://localhost:3000) 
 
 
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
