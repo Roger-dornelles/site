@@ -32,6 +32,7 @@ const Footer = ({ ref }: any) => {
 
         <div
           className={`mb-[1rem]`}
+          data-cy="footer_maisCanais"
         >
           <div className={`w-[60px] h-[5px] bg-[#edcf75] `}></div>
           <h2 className={`text-[1.7rem] font-bold uppercase`}>Mais Canais</h2>
@@ -50,7 +51,8 @@ const Footer = ({ ref }: any) => {
         className={`w-[80%] border-t-[1px] mt-[2rem] flex flex-row
         `}
       >
-        <div className={`flex flex-row w-[100%] justify-between items-center py-[1rem]`}>
+        <div className={`flex flex-row w-[100%] justify-between items-center py-[1rem]`}
+        data-cy='footer_bottom'>
           <div className={` flex flex-row text-[#bc9c57] items-center`}>
             <p>GD&JR</p>{' '}
             <span className={`text-[10px] px-[0.3rem]`}>

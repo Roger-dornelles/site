@@ -35,6 +35,7 @@ const Sobre = () => {
       transition={{ ease: 'easeOut', duration: 2.5 }}
       exit={{ opacity: 0 }}
       className={`bg-[#323538] w-[100%] min-h-[100%] flex justify-center items-center flex-col  m-auto pt-[10rem] `}
+      data-cy="sobre"
     >
       <div className={`w-[90%] h-[600px] m-auto flex justify-center items-center relative max-md:w-[100%]  overflow-hidden`}>
         <div
@@ -264,6 +265,7 @@ const Sobre = () => {
         transition={{ ease: 'easeOut', duration: 2.5 }}
         exit={{ opacity: 0 }}
         className={`w-full h-[500px] flex flex-col m-auto relative max-md:pt-[2rem]`}
+        data-cy="manifesto"
       >
         <div className={`w-[70%] flex justify-center items-center flex-col m-auto text-[#fff]`}>
           <h2 className={`uppercase text-[2.5rem] font-medium `}>Manifesto</h2>
@@ -272,7 +274,7 @@ const Sobre = () => {
           </p>
         </div>
 
-        <div className={`w-[15%] max-xl:w-[30%] mb-[-1.4rem] flex justify-center z-[99] m-auto`}>
+        <div data-cy="socials" className={`w-[15%] max-xl:w-[30%] mb-[-1.4rem] flex justify-center z-[99] m-auto`}>
           <div className={`bg-black flex flex-row w-[100%] justify-around rounded-[25px] px-[1.5rem] py-[0.7rem]`}>
             {socials &&
               socials.map((item: SocialsType) => {
@@ -289,7 +291,7 @@ const Sobre = () => {
         </div>
       </motion.div>
 
-      <Footer ref={ref1} />
+      <Footer ref={ref1} data-cy="footer" />
     </motion.section>
   );
 };

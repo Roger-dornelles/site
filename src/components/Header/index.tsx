@@ -72,9 +72,10 @@ const Header = ({ children }: HeaderType) => {
           height={0}
           className={`ml-4 h-[50px] w-[60px] cursor-pointer max-xl:absolute max-xl:left-[5rem] `}
           onClick={handleClickImage}
+          data-cy="logo"
         />
 
-        <nav className={`flex flex-1 justify-center items-center flex-wrap max-xl:hidden`}>
+        <nav className={`flex flex-1 justify-center items-center flex-wrap max-xl:hidden`} >
           <ul className={` flex flex-row justify-between h-[100%] flex-wrap `}>
             {navigation &&
               navigation.map((item: NavigationType) => {
@@ -85,6 +86,7 @@ const Header = ({ children }: HeaderType) => {
                       handleOpenModal(item.name);
                       setIdNavigation(item.id);
                     }}
+
                     className={`flex justify-between  align-center py-[2rem]  ${
                       idNavigation === item.id && 'border-t-[3px] border-[#bc9c57] '
                     } hover:text-[#bc9c57] ${idNavigation === item.id && ' text-[#bc9c57]'} `}
@@ -103,7 +105,9 @@ const Header = ({ children }: HeaderType) => {
           onClick={() => {
             setOpenMenuMobile(true);
           }}
+          data-cy="mobile-icon"
         >
+
           <FaBars />
         </span>
 
@@ -119,6 +123,7 @@ const Header = ({ children }: HeaderType) => {
             onClick={() => {
               setOpenMenuMobile(false);
             }}
+            data-cy="mobile-icon-close"
           >
             <BsXCircle />
           </span>
