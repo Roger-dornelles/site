@@ -51,5 +51,5 @@ vai abrir uma aba do cypress selecionar E2E após ELECTRON => START E2E TESTING
 
 Vai abrir outra aba com os teste só selecionar o teste que queira executar
 
-PROTO pode acompanhar os teses sendo executados 
+PRONTO pode acompanhar os testes sendo executados 
 
